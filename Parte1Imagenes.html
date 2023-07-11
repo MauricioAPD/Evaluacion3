@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parte 1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            background-color: #000000;
+            font-size: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            font-family: cursive;
+            display: block;
+            padding: 1px 15px;
+            text-decoration: none;
+            color: rgb(199, 59, 59);
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #463939;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul li {
+                display: block;
+                text-align: center;
+                background-color: black;
+            }
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-box {
+            width: 30%;
+            position: relative;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.9);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } 
+      
+        .image-container {
+            margin: 20px;  
+        }
+
+        .image-container {
+            width: 100%;
+            height: 300px;
+        }
+
+        .image-container img {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%; /* Establece el ancho máximo al tamaño de la pantalla */
+            overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #ff0000; /* Grosor de la línea y color */
+            margin: 4px 0; /* Margen superior e inferior */
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href=""><H3>SysDB</H3></a></li>
+            <li><a href="Parte1Imagenes.html">Home</a></li>
+            <li><a href="parte2Casillas.html">Register Form</a></li>
+            <li><a href="Parte3boton.html">things Finder</a></li>
+        </ul>
+    </nav>
+    <br>
+    <h1>    &nbsp;&nbsp;Welcome</h1>
+   <hr><br><br>
+    <div class="container">
+        <div class="image-container">
+            <div class="image-box">
+                <img src="https://i.ytimg.com/vi/FJIGY_vStXs/maxresdefault.jpg" alt="Imagen 1">
+            </div>
+            <div class="image-box">
+                <img src="https://erikstore.com/blog/wp-content/uploads/2023/04/Super-mario-bros-la-pelicula-curiosidades.jpg" alt="Imagen 2" >
+            </div>
+            <div class="image-box">
+                <img src="https://www.loslunesseriefilos.com/wp-content/uploads/2022/10/la-sirenita-pelicula-2023.jpg" alt="Imagen 3" >
+            </div> &nbsp;&nbsp;&nbsp;
+    </div>
+    <br><hr>
+</body>
+</html>

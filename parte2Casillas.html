@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parte 2</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            background-color: #000000;
+            font-size: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            font-family: cursive;
+            display: block;
+            padding: 1px 15px;
+            text-decoration: none;
+            color: rgb(199, 59, 59);
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #4e5278;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul li {
+                display: block;
+                text-align: center;
+                background-color: black;
+            }
+        }
+
+        /* Estilos para las columnas y cuadros */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .item {
+            border: 1px solid #f30000;
+            padding: 10px;
+            border-radius: 7px;
+            position: relative;
+        }
+
+        .item:nth-child(3) {
+            grid-row: span 2;
+        }
+        
+        .container {
+            padding-right: 20px;
+        }
+
+        .item {
+           margin-bottom: 25px;
+        }
+        .item input {
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+
+        .item label {
+            display: block;
+            margin-bottom: 5px;
+            position: absolute;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            top: -25px;
+            left: 1px;
+        }
+        
+        
+        .button-container {
+            display: flex;
+        }
+
+        .my-button {
+            margin-right: 10px;
+        }
+        .button-container {
+            display: flex;
+        }
+
+        .my-button1 {
+            margin-right: 10px;
+            background-color: #b43d3d; /* Color rojo */
+            color: #050505; /* Texto blanco */
+            border: none; /* Sin borde */
+            padding: 10px 20px; /* Espaciado interno */
+            border-radius: 5px; /* Esquinas redondeadas */
+        }
+
+        .my-button2 {
+            margin-right: 10px;
+            background-color: #30312f; /* Color rojo */
+            color: #fb7979; /* Texto blanco */
+            border: none; /* Sin borde */
+            padding: 10px 20px; /* Espaciado interno */
+            border-radius: 5px; /* Esquinas redondeadas */
+    
+        }
+        
+        .my-button3 {
+            margin-right: 10px;
+            background-color: #868686; /* Color rojo */
+            color: #000000; /* Texto blanco */
+            border: none; /* Sin borde */
+            padding: 10px 20px; /* Espaciado interno */
+            border-radius: 5px; /* Esquinas redondeadas */
+        }
+        .my-element {
+            border: 1px solid #000000; /* Borde sólido de 1 píxel en color negro */
+            padding: 5px; /* Espacio interno de 5 píxeles */
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ff0000; /* Grosor de la línea y color */
+            margin: 4px 0; /* Margen superior e inferior */
+        }
+        
+        .item select {
+            appearance: none;
+            border-radius: 7px;/* El borde del cuadro*/
+            background-color: #FFFFFF;
+            padding: 5px 30px 5px 10px;
+            color: #000000;
+            border: 1px solid #ff0000;
+            width: 100%;
+            height: 30px;
+        }
+
+        .item select:focus {
+            outline: none;
+            box-shadow: 0 0 5px #CCCCCC;
+        }
+
+
+        .item select:focus {
+            outline: none;
+            box-shadow: 0 0 5px #CCCCCC;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href=""><H3>SysDB</H3></a></li>
+            <li><a href="Parte1Imagenes.html">Home</a></li>
+            <li><a href="parte2Casillas.html">Register form</a></li>
+            <li><a href="Parte3boton.html">things finder</a></li>
+        </ul>
+    </nav>
+
+<br>   
+<h1>    &nbsp;&nbsp;Register Form</h1>
+<hr>
+<br>
+   
+      
+    <br><br>
+    
+    <div class="container">
+        <div class="item">
+            <input type="text" id="name" placeholder="Name" value="Name" oninput="handleInputChange(this)">
+            <label for="name">Name</label>
+        </div>
+        <div class="item select">
+            <label for="name">City</label>
+            <select name="ciudades">
+              <option value="">Open this select menu</option>
+              <option value="Talca">Talca</option>
+              <option value="Santiago">Santiago</option>
+              <option value="Caleuche city">Villa Alegre</option>
+              <option value="Linares">Linares</option>
+            </select>
+          </div>
+
+        <div class="item">
+            <input type="text" id="comments" placeholder="Comments" oninput="handleInputChange(this)">
+            <label for="name">Comments</label>
+        </div>
+        <div class="item">
+            <input type="text" id="lastName" placeholder="Last Name" oninput="handleInputChange(this)">
+            <label for="name">Last name</label>
+        </div>
+        <div class="item">
+            <input type="text" id="email" placeholder="Email address" oninput="handleInputChange(this)">
+            <label for="name">Emaile</label>
+        </div>
+        <div class="item">
+            <input type="text" id="phone" placeholder="Phone" oninput="handleInputChange(this)">
+            <label for="name">Phone</label>
+        </div>
+        <div class="item">
+            <input type="text" id="age" placeholder="" oninput="handleInputChange(this)">
+            <label for="name">Age</label>
+            <br>
+        </div>
+        <div class="item">
+            <input type="text" id="age" placeholder="" oninput="handleInputChange(this)">
+            <label for="name">User name</label>
+            <br>
+        </div>
+        <div class="button-container">
+            <a href="Parte3boton.html"><button class="my-button1">Save</button></a>
+            <a href="Parte1Imagenes.html"><button class="my-button2">Home</button></a>
+            <a href="Parte3boton.html"><button class="my-button3">Find</button></a>
+        </div>
+    </div>
+    <br>
+    <hr>
+    </body>
+</html>
